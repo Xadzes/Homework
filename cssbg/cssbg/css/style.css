@@ -75,13 +75,9 @@ h6 {
 }
 /*--------------------*/
 body {
-  background-color: rgb(232, 232, 232);
-  background-image: url("../img/Ellipse.png");
-  background-position: 410px 80px;
-  background-repeat: no-repeat;
+  background: #e8e8e8 url("../img/Ellipse.png") 400px 60px no-repeat;
 }
 .meine {
-  border: 1px solid #000;
   margin: 6% 30%;
   min-width: 841px;
   min-height: 1300px;
