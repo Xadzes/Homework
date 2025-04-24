@@ -75,56 +75,100 @@ h6 {
 }
 /*--------------------*/
 body {
-  background: #e8e8e8 url("../img/Ellipse.png") 400px 60px no-repeat;
+  background-color: #e8e8e8;
 }
 .meine {
-  margin: 6% 30%;
-  min-width: 841px;
-  min-height: 1300px;
+  margin: 0 auto;
+  max-width: 841px;
+  padding: 80px 0;
+
+  position: relative;
 }
-h1 {
-  padding: 30px 0px 0px 0px;
+
+.meine__bg {
+  user-select: none;
+  pointer-events: none;
+
+  position: absolute;
+  z-index: -1;
+
+  top: 50px;
+  left: -145px;
+
+  opacity: 0.65;
+}
+
+.tag {
+  padding-top: 30px;
   text-align: center;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(39, 61, 70);
   opacity: 0.6;
+
+  margin-bottom: 20px;
 }
-.txt1 {
+
+.title {
   color: rgb(39, 61, 70);
   text-align: center;
   font-size: 36px;
+  max-width: 740px;
+  margin: 0 auto;
+  line-height: 1.4;
+
+  margin-bottom: 50px;
 }
+
 .man {
   max-width: 840px;
   max-height: 565px;
-  margin: 50px 2px;
   border: white 10px solid;
   box-shadow: 0 15px 65px rgba(15, 16, 16, 0.15);
+
+  margin-bottom: 100px;
+
+  object-fit: cover;
+  object-position: center;
 }
+
+.wrapper {
+  padding: 0 40px;
+}
+
 .txt2 {
   text-align: left;
   font-size: 24px;
   line-height: 30px;
-  max-width: 740px;
   color: rgb(39, 61, 70);
   opacity: 0.8;
-  margin: 10px 20px 20px 50px;
 }
 
 .txt2 p {
-  margin: 0px 0px 20px 0px;
+  margin-bottom: 50px;
 }
+
+.txt2 p:last-child {
+  margin-bottom: 40px;
+}
+
 .list {
-  margin: 50px 0px 0px 0px;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin-bottom: 50px;
+
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 .list li {
   font-size: 20px;
-  margin: 0px 0px 8px 40px;
-  background: url(../img/icons/li1.svg) left no-repeat;
-  padding: 0px 0px 0px 20px;
+  padding-left: 35px;
+  background: url(../img/icons/li1.svg) left/25px 18px no-repeat;
+
+  margin-bottom: 5px;
 }
+
+.list li:last-child {
+  margin-bottom: 0;
+}
+
 .list li:nth-child(2) {
   color: rgb(128, 183, 179);
   font-style: italic;
@@ -139,13 +183,21 @@ h1 {
 
 .button {
   display: inline-block;
-  margin: 50px 0 0 40px;
-  padding: 12px 55px 12px 20px;
   border-radius: 50px;
   box-shadow: 0 6px 20px rgba(15, 16, 16, 0.15);
-  color: #ffffff;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 14px;
+  background-color: #80b7b3;
+}
 
-  background: #80b7b3 url("../img/icons/arw.svg") 115px 12px no-repeat;
+.button a {
+  display: inline-block;
+  color: #ffffff;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 14px;
+  padding: 12px 30px;
+
+  letter-spacing: 1px;
+}
+
+.button a span {
+  margin-right: 10px;
 }
