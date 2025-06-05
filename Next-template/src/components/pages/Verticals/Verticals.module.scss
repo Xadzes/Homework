@@ -1,0 +1,76 @@
+.verticals {
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__body {
+    max-width: 990px;
+    margin: 0 auto;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    margin: 0px -22.5px;
+  }
+
+  &__column {
+    flex: 0 1 33.333%;
+    padding: 0 22.5px;
+    display: flex;
+  }
+
+  &__item {
+    background-color: #445162;
+    border-radius: 5px;
+    border: 3px solid #445162;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__subtitle {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px 0px;
+  }
+
+  &__label {
+    font-size: 40px;
+    color: #445162;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 0px;
+  }
+
+  &__text {
+    flex: 1 1 auto;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    padding: 20px;
+
+    p {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__btn {
+    display: block;
+    height: 40px;
+    background-color: #fff;
+    color: #445162;
+    border-radius: 5px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    margin: 0px 20px;
+  }
+}

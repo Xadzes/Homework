@@ -1,0 +1,38 @@
+.hi {
+  padding: 50px;
+  background-color: #445162;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  color: #fff;
+  padding-right: 30px;
+}
+
+.title {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.list {
+  font-size: 20px;
+  li {
+    list-style: none;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    background: url("/img/icons/icon.png") no-repeat left center;
+    line-height: 22px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  }
+  li:last-child {
+    margin: 0;
+  }
+}
+
+.imageWrapper {
+  flex: 0 0 400px;
+}
