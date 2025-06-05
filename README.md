@@ -3,6 +3,8 @@
 This is a **Next.js** project bootstrapped with
 [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+Homework from rijy freelancer
+
 ### Features:
 
 - ⚡ **TypeScript**
@@ -80,4 +82,4 @@ successfully before pushing code to the repository.
 
 ---
 
-Now you're ready to start building! 🚀✨
+# Now you're ready to start building! 🚀✨
