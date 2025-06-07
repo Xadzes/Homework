@@ -1,3 +1,5 @@
+// все пиксели в rem()
+
 .hi {
   padding: 50px;
   background-color: #445162;
@@ -24,7 +26,8 @@
     list-style: none;
     padding-left: 30px;
     margin-bottom: 20px;
-    background: url("/img/icons/icon.png") no-repeat left center;
+    // в наших проектах мы так не делаем, все иконки в svg, и используются в компонентах в виде базового Icon компонента, где пропсами передаются параметры. Разобрать как это устроено в проекте
+    background: url('/img/icons/icon.png') no-repeat left center;
     line-height: 22px;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
   }
@@ -33,6 +36,15 @@
   }
 }
 
-.imageWrapper {
-  flex: 0 0 400px;
+.image__wrapper {
+  position: relative;
+  flex: 0 0 rem(400px);
+
+  width: rem(400px);
+  height: rem(400px);
+
+  img {
+    object-fit: cover;
+    object-position: center;
+  }
 }
