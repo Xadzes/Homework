@@ -46,7 +46,7 @@ export default function UserForm() {
     Возраст: ${form.age}
     Роль: ${form.role}
 
-    Всё верно?`;
+    Всё правильно?`;
 
     if (window.confirm(msg)) {
       alert('Спасибо! Форма отправлена.');
