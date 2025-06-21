@@ -38,14 +38,27 @@ export default function UserForm() {
 
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    alert('Форма отправлена!\n' + JSON.stringify(form, null, 2));
-    setForm({
-      name: '',
-      email: '',
-      role: '',
-      age: '',
-    });
+
+    const msg = `Проверьте введённые данные:
+  
+    Имя: ${form.name}
+    E-mail: ${form.email}
+    Возраст: ${form.age}
+    Роль: ${form.role}
+
+    Всё верно?`;
+
+    if (window.confirm(msg)) {
+      alert('Спасибо! Форма отправлена.');
+      setForm({
+        name: '',
+        email: '',
+        role: '',
+        age: '',
+      });
+    }
   }
+
   return (
     <div className={s.Wrapper}>
       <div className={s.Content}>
@@ -111,4 +124,3 @@ export default function UserForm() {
     </div>
   );
 }
-
