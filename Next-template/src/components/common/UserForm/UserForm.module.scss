@@ -1,0 +1,101 @@
+.Wrapper {
+  min-height: 100dvh;    
+  display: flex;
+  flex-direction: column;
+}
+
+.Content {
+  flex: 1 1 auto;
+}
+
+.Form {
+  background: #fafafa;
+  padding: 2rem;             
+  border-radius: 18px;        
+  max-width: 35rem;          
+  margin: 6dvh auto 0 auto;  
+  min-width: 20dvw;        
+  min-height: 40dvh;
+  box-shadow: 0 5px 32px rgba(90, 110, 140, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;                  
+}
+
+.Title {
+  font-size: 1.5rem;            
+  font-weight: 700;
+  margin-bottom: 1.2rem;      
+  color: #236;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.Field {
+  margin-bottom: 0.8rem;   
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.Label {
+  font-size: 1rem;         
+  margin-bottom: 0.5rem;         
+  color: #1a237e;
+  font-weight: 500;
+}
+
+.Input,
+.Select {
+  padding: 0.6rem 1rem;         
+  font-size: 1.1rem;           
+  border: 2px solid #b3b3b3; 
+  border-radius: 8px;        
+  background: #f0f7fa;
+  color: #1a237e;
+  transition: border 0.18s;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  &:focus,
+  &:active {
+    border: 2px solid #1976d2;  
+    background: #e3f2fd;
+    color: #1976d2;
+  }
+}
+.select {
+  background: #7fd4e3a2;
+  color: #1a237e;
+}
+
+.select option[disabled][value=''] {
+  color: #98efdd;
+}
+
+.Input:focus,
+.Select:focus {
+  border: 2px solid #1976d2;
+  font-weight: 600;
+  outline: none;
+}
+
+.Button {
+  padding: 11px 24px;          
+  font-size: 1.15rem;             
+  border-radius: 11px;        
+  background: #90caf9;
+  color: #0d2257;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  max-width: 100%;
+  transition: background 0.18s;
+  min-height: 3.2rem;            
+}
+
+.Button:hover {
+  background: #64b5f6;
+}
