@@ -1,4 +1,4 @@
-import { Montserrat } from 'next/font/google';
+import { Montserrat, Urbanist } from 'next/font/google';
 
 import { Footer, Header } from '@common/index';
 
@@ -10,6 +10,13 @@ const montserrat = Montserrat({
   variable: '--font-Montserrat',
   weight: 'variable',
   preload: true,
+});
+
+const urbanist = Urbanist({
+  subsets: ['latin'],
+  variable: '--font-urbanist',
+  display: 'swap',
+  weight: ['600'],
 });
 
 export async function generateMetadata() {
@@ -46,8 +53,8 @@ export async function generateMetadata() {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang='en'>
-      <body className={montserrat.variable}>
+    <html lang="en">
+      <body className={`${montserrat.variable} ${urbanist.variable}`}>
         <Header />
         {children}
         <Footer />

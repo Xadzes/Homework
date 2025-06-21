@@ -1,15 +1,5 @@
-import { Hi } from '@pages/Hi/Hi';
-import { What } from '@pages/What/What';
-import { Columns } from '@pages/Columns/Columns';
-import { Verticals } from '@pages/Verticals/Verticals';
+import UserForm from '@/components/common/UserForm/UserForm';
 
-export default function HomePage() {
-  return (
-    <>
-      <Hi />
-      <What />
-      <Columns />
-      <Verticals />
-    </>
-  );
+export default function Page() {
+  return <UserForm />;
 }
